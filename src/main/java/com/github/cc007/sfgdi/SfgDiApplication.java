@@ -1,6 +1,7 @@
 package com.github.cc007.sfgdi;
 
 import com.github.cc007.sfgdi.controllers.ConstructorInjectedController;
+import com.github.cc007.sfgdi.controllers.I18nController;
 import com.github.cc007.sfgdi.controllers.MyController;
 import com.github.cc007.sfgdi.controllers.PropertyInjectedController;
 import com.github.cc007.sfgdi.controllers.SetterInjectedController;
@@ -16,6 +17,9 @@ public class SfgDiApplication
 	{
 
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
+
+		I18nController controller = ctx.getBean("i18nController", I18nController.class);
+		System.out.println(controller.sayHello());
 
 		MyController myController = ctx.getBean("myController", MyController.class);
 		System.out.println("----- Primary Bean");
