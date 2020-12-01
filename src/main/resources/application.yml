@@ -3,3 +3,15 @@ guru:
     username: JMSCC007
     password: JMSsomepass
     url: JMSblabla
+
+---
+
+guru:
+  jms:
+    username: JMSCC007 - EN
+    password: JMSsomepass - EN
+    url: JMSblabla - EN
+spring:
+  config:
+    activate:
+      on-profile: EN
