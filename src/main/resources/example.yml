@@ -1,0 +1,36 @@
+# this is a comment. Herpaderp
+
+herp: derp
+
+herps: # more comments derp
+  - herp
+  - a
+  - derp
+
+actual_hash_value: "#"
+
+book:
+  author: Me Myself
+  publisher: forever alone publishers
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, FALSE
+
+string_val: "This is  it's quote"
+
+colon_string: "my courses: one two three"
+
+include_new_lines: |
+  bla
+  blabla
+  blablabla
+
+ignore_new_lines: >
+  this is
+  just one long
+  string
